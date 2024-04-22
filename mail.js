@@ -14,13 +14,18 @@ function login() {
         let a = listaMail[i] 
         if (user == a) {
             console.log("true")
-            document.getElementById("result").innerHTML = "ACCESS GRANTED"
+            document.getElementById("result").innerHTML = "ACCESS GRANTED";
+            break;
         }
-        else if (user != a) {
+        if (user !== a) {
             console.log("false")
-         document.getElementById("result").innerHTML = "ACCESS DENIED"
-         }
+            document.getElementById("result").innerHTML = "ACCESS DENIED"
+            alert("errato")
+            break
+        }
       
     }
         
 }
+
+
