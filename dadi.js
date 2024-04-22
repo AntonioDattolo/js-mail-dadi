@@ -1,26 +1,27 @@
-// let player = Math.floor( Math.random()* 7 )
-// let pc = Math.floor( Math.random()* 7 )
-// console.log(player)
-// console.log(pc)
+
 
 function play(){
-    let player = Math.floor( Math.random()* 7 )
-    console.log(player)
+    let player = Math.ceil( Math.random() * 6  );
+    console.log(`player con ${player}`);
+    let pc = Math.ceil( Math.random()* 6 );
+    console.log(`pc con ${pc}`);
     
-    let pc = Math.floor( Math.random()* 7 )
-    console.log(pc)
-    
-    
-   
     if(player > pc){
-        console.log("il vincitore è il player")
-        document.getElementById("winner").innerHTML =" il vincitore è il player"
+        console.log(`il vincitore è il player con ${player}`);
+        document.getElementById("player").innerHTML = `${player}`;
+        document.getElementById("pc").innerHTML = `${pc}`;
+        document.getElementById("winner").innerHTML =" il vincitore è il player";
     }else if(player < pc){
-        console.log("il vinctiore è il computer")
-        document.getElementById("winner").innerHTML =" il vincitore è il computer"
+        console.log(`il vinctiore è il computer con ${pc}`);
+        document.getElementById("player").innerHTML = `${player}`;
+        document.getElementById("pc").innerHTML = `${pc}`;
+        document.getElementById("winner").innerHTML =" il vincitore è il computer";
+    }else if (player = pc){
+        console.log(`PAREGGIO`);
+        document.getElementById("player").innerHTML = `${player}`;
+        document.getElementById("pc").innerHTML = `${pc}`;
+        document.getElementById("winner").innerHTML =" Il risultato è di pareggio";
     }
-
-    
 }
 
 
