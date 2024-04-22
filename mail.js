@@ -19,9 +19,7 @@ function login() {
         }
         if (user !== a) {
             console.log("false")
-            document.getElementById("result").innerHTML = "ACCESS DENIED"
-            alert("errato")
-            break
+            document.getElementById("result").innerHTML = "ACCESS DENIED" 
         }
       
     }
